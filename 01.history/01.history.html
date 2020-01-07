@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+       window.onpopstate = function () {
+        console.log(11111)
+    }
+    history.pushState({name: "page1"}, null, '/page1.html')
+    history.pushState({name: "page2"}, null, '/page2.html')
+    history.pushState({name: "page3"}, null, '/page3.html')
+    history.pushState({name: "page4"}, null, '/page4.html')
+
+
+ 
+</script>
+</html>
